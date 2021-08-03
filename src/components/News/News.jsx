@@ -22,12 +22,16 @@ const News = () => {
                 
                             <Grid className={classes.test} item xs={12}     md={12} >
                               
-                                  <img className='image' src={hot} />
+                                 <Card>
+                                     <CardContent>
+                                          <img className='image' src={hot} />
                                   <p className='food-name'>Spain Appetizer</p>
                                <p>Etiam feugiat elefiend est, odio tempor vitaevivamus
                                 maximus scelerisque ipsum nec commodo
                                 </p>
                                 <p className='read'>Read more</p>
+                                     </CardContent>
+                                 </Card>
                                   
                             </Grid> 
                         </Grid>
@@ -39,12 +43,16 @@ const News = () => {
                 
                             <Grid className={classes.test} item xs={12}     md={12} >
                               
-                                  <img className='image' src={pomo} />
+                                 <Card>
+                                     <CardContent>
+                                     <img className='image' src={pomo} />
                                   <p className='food-name'>Wine and Cheese</p>
                                <p>Etiam feugiat elefiend est, odio tempor vitaevivamus
                                 maximus scelerisque ipsum nec commodo
                                 </p>
                                 <p className='read'>Read more</p>
+                                     </CardContent>
+                                 </Card>
                                   
                             </Grid> 
                         </Grid>
@@ -56,18 +64,22 @@ const News = () => {
                 
                             <Grid className={classes.test} item xs={12}     md={12} >
                               
-                                  <img className='image' src={pomo} />
+                                  <Card>
+                                      <CardContent>
+                                      <img className='image' src={pomo} />
                                   <p className='food-name'>Cup of Coffee</p>
                                <p>Etiam feugiat elefiend est, odio tempor vitaevivamus
                                 maximus scelerisque ipsum nec commodo
                                 </p>
                                 <p className='read'>Read more</p>
+                                      </CardContent>
+                                  </Card>
                                   
                             </Grid> 
                         </Grid>
                         
                     </Grid>
-                    
+                     
                     
                     
             </Grid>
