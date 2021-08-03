@@ -6,6 +6,12 @@
   font-family: 'Raleway', sans-serif;
   scroll-behavior: smooth;
 }
+@media only screen and (max-width: 600px){
+ .App{
+  padding: 15px;
+ }
+
+}
 
 
 
