@@ -1,0 +1,18 @@
+li{
+    color: black;
+    list-style-type: none;
+    margin-right: 4em;
+
+  cursor:pointer;
+  float:left;
+  display:block;
+  font-weight:700
+}
+
+ul{
+    margin-left: auto;
+}
+
+p{
+    color:black
+}

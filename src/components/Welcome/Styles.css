@@ -1,0 +1,57 @@
+img{
+    height:300px;
+    width:400px
+    
+}
+
+@media only screen and (max-width: 600px){
+    img{
+        width: 300px;
+        
+    }
+  
+  
+  }
+
+.welcome{
+    color:#FFB347;
+    font-family: 'Niconne', cursive;
+    margin-bottom: 0;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.welcome-head{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: justify;
+    margin-left: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+p{
+    text-align: left;
+    
+}
+
+.explore-btn{
+    background-color: #06B025;;
+    font-family: 'Raleway', sans-serif; 
+  text-transform: none;
+  color: white;
+  border: 1px solid #fff;
+
+  padding: 9px 9px;
+  float:left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 15px;
+  
+
+  margin-bottom: 3em;
+  cursor:pointer;
+}
+

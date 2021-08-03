@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.MuiDrawer-paper {
+  width: 60% !important;
+  font-family: 'Raleway', sans-serif;
+  }
