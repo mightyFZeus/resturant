@@ -1,5 +1,5 @@
 import React from 'react'
-import {Grid, Card, CardContent} from '@material-ui/core';
+import {Grid, Card, CardContent, CardMedia} from '@material-ui/core';
 import hot from '../../assets/images/hot.jpg'
 import pomo from '../../assets/images/pomo.jpg'
 
@@ -14,22 +14,102 @@ const News = () => {
         <div className={classes.toolbar}/>
 
         <h4 className='reason-head'>News</h4>
-        <h3 className='why-head'>Lastest News</h3>
+        <h5 className='why-head'>Lastest News</h5>
              <Grid container  justify="center" md={12}  spacing={2}>
                    
-                    <Grid  md={4}    >
+                    <Grid  md={2}    >
                         <Grid container  justify="space-evenly" md={12} spacing={2}>
                 
-                            <Grid className={classes.test} item xs={12}     md={12} >
+                            <Grid  item xs={12}     md={12} >
                               
-                                 <Card>
-                                     <CardContent>
-                                          <img className='image' src={hot} />
-                                  <p className='food-name'>Spain Appetizer</p>
-                               <p>Etiam feugiat elefiend est, odio tempor vitaevivamus
-                                maximus scelerisque ipsum nec commodo
-                                </p>
-                                <p className='read'>Read more</p>
+                                 <Card className={classes.test}>
+                                     <CardContent className={classes.card}>
+                                          <CardMedia
+                                            className={classes.media}
+                                            image={hot}
+                                            title="Contemplative Reptile"
+                                        />
+                                           
+                                        <p className='food-name'>Spain Appetizer</p>
+                                        <p className='food-text'>Etiam feugiat elefiend est, odio tempor vitaevivamus
+                                        maximus scelerisque ipsum nec commodo
+                                        </p>
+                                        <p className='read'>Read more</p> 
+                                     </CardContent>
+                                 </Card>
+                                  
+                            </Grid> 
+                        </Grid>
+                        
+                    </Grid>
+                    <Grid  md={2}    >
+                        <Grid container  justify="space-evenly" md={12} spacing={2}>
+                
+                            <Grid  item xs={12}     md={12} >
+                              
+                                 <Card className={classes.test}>
+                                     <CardContent className={classes.card}>
+                                          <CardMedia
+                                            className={classes.media}
+                                            image={pomo}
+                                            title="Contemplative Reptile"
+                                        />
+                                           
+                                        <p className='food-name'>Spain Appetizer</p>
+                                        <p className='food-text'>Etiam feugiat elefiend est, odio tempor vitaevivamus
+                                        maximus scelerisque ipsum nec commodo
+                                        </p>
+                                        <p className='read'>Read more</p> 
+                                     </CardContent>
+                                 </Card>
+                                  
+                            </Grid> 
+                        </Grid>
+                        
+                    </Grid>
+                    <Grid  md={2}    >
+                        <Grid container  justify="space-evenly" md={12} spacing={2}>
+                
+                            <Grid item xs={12}     md={12} >
+                              
+                                 <Card className={classes.test}>
+                                     <CardContent className={classes.card}>
+                                          <CardMedia
+                                            className={classes.media}
+                                            image={hot}
+                                            title="Contemplative Reptile"
+                                        />
+                                           
+                                        <p className='food-name'>Spain Appetizer</p>
+                                        <p className='food-text'>Etiam feugiat elefiend est, odio tempor vitaevivamus
+                                        maximus scelerisque ipsum nec commodo
+                                        </p>
+                                        <p className='read'>Read more</p> 
+                                     </CardContent>
+                                 </Card>
+                                  
+                            </Grid> 
+                        </Grid>
+                        
+                    </Grid>
+                    <Grid  md={2}    >
+                        <Grid container  justify="space-evenly" md={12} spacing={2}>
+                
+                            <Grid  item xs={12}     md={12} >
+                              
+                                 <Card className={classes.test}>
+                                     <CardContent className={classes.card}>
+                                          <CardMedia
+                                            className={classes.media}
+                                            image={hot}
+                                            title="Contemplative Reptile"
+                                        />
+                                           
+                                        <p className='food-name'>Spain Appetizer</p>
+                                        <p className='food-text'>Etiam feugiat elefiend est, odio tempor vitaevivamus
+                                        maximus scelerisque ipsum nec commodo
+                                        </p>
+                                        <p className='read'>Read more</p> 
                                      </CardContent>
                                  </Card>
                                   
@@ -38,48 +118,8 @@ const News = () => {
                         
                     </Grid>
                     
-                    <Grid  md={4}    >
-                        <Grid container  justify="space-evenly" md={12} spacing={2}>
-                
-                            <Grid className={classes.test} item xs={12}     md={12} >
-                              
-                                 <Card>
-                                     <CardContent>
-                                     <img className='image' src={pomo} />
-                                  <p className='food-name'>Wine and Cheese</p>
-                               <p>Etiam feugiat elefiend est, odio tempor vitaevivamus
-                                maximus scelerisque ipsum nec commodo
-                                </p>
-                                <p className='read'>Read more</p>
-                                     </CardContent>
-                                 </Card>
-                                  
-                            </Grid> 
-                        </Grid>
-                        
-                    </Grid>
                     
-                    <Grid  md={4}    >
-                        <Grid container  justify="space-evenly" md={12} spacing={2}>
-                
-                            <Grid className={classes.test} item xs={12}     md={12} >
-                              
-                                  <Card>
-                                      <CardContent>
-                                      <img className='image' src={pomo} />
-                                  <p className='food-name'>Cup of Coffee</p>
-                               <p>Etiam feugiat elefiend est, odio tempor vitaevivamus
-                                maximus scelerisque ipsum nec commodo
-                                </p>
-                                <p className='read'>Read more</p>
-                                      </CardContent>
-                                  </Card>
-                                  
-                            </Grid> 
-                        </Grid>
-                        
-                    </Grid>
-                     
+                    
                     
                     
             </Grid>

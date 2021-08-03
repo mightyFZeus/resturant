@@ -3,10 +3,20 @@
 }
 
 .food-name{
-    font-size: 30px;
+    font-size: 15px;
     margin-bottom: 0;
+    font-weight: bold;
 }
 
 .read{
     color:#FFB347;
+    font-size: 10px;
+}
+
+.food-text{
+    font-size: 10px;
+}
+
+.why-head{
+    font-size: 20px;
 }

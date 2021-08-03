@@ -29,7 +29,7 @@ const Header = () => {
                         <Grid container  justify="space-evenly" md={12} spacing={1}>
                 
                             <Grid  item xs={12} lg={2}   md={12} >
-                                <img className='road-to' src={pizzza}  alt='Road to knowledge' />
+                                <img className='pizza' src={pizzza}  alt='Road to knowledge' />
                             </Grid> 
                         </Grid>
                 </Grid>
