@@ -9,8 +9,8 @@ const Header = () => {
     return (
         <>
         <div className={classes.toolbar}/>
-             <Grid container  justify="center" md={12} spacing={2}>
-                    <Grid md={6}  className={classes.test}>
+             <Grid className={classes.main} container  justify="center" md={12} spacing={2}>
+                    <Grid md={6}  className={classes.grid1}>
                         <Grid container  justify="space-evenly" md={12} spacing={1}>
                 
                             <Grid  item xs={12} lg={2}    md={12} >
@@ -18,7 +18,7 @@ const Header = () => {
                             </Grid> 
                         </Grid>
                 </Grid>
-                <Grid className={classes.test1}  item xs={12}  md={6} order={{ md: 1, lg: 2 }} >
+                <Grid className={classes.grids2}  item xs={12}  md={6} order={{ md: 1, lg: 2 }} >
                         <p className='welcome'>Welcome</p>
                       <h4 className='welcome-head'>Welcome to Figo  Resturant</h4>
                       <p >

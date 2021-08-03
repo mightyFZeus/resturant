@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <>
         <div className={classes.toolbar}/>
-             <Grid container  justify="center" md={12} spacing={2}>
+             <Grid className={classes.main}  container  justify="center" md={12} spacing={2}>
                     <Grid  item xs={12}  md={6} >
                       <h2>All in Good Taste <br /> Food with Figo</h2>
                       <p >
