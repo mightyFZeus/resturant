@@ -16,7 +16,7 @@ export default function Rice() {
     const properties = {
         duration: 3000,
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         autoplay: true,
         indicators: true,
       };
