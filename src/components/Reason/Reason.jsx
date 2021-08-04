@@ -16,7 +16,7 @@ const Reason = () => {
         <h4 className='reason-head'>Reason</h4>
         <h3 className='why-head'>Why Choose Us</h3>
              <Grid container   md={12}  spacing={2}>
-                    <Grid item  md={4} sm={4}    >
+                    <Grid item  md={4}     >
                         
                               <Card className={classes.test}>
                                   <CardContent>
@@ -30,7 +30,7 @@ const Reason = () => {
                            
                         
                     </Grid>
-                    <Grid  item md={4} sm={4}   >
+                    <Grid  item md={4}    >
                         
                               <Card className={classes.test}>
                                   <CardContent>
@@ -46,7 +46,7 @@ const Reason = () => {
                     </Grid>
                     
                     
-                    <Grid  md={4}  sm={4} item  >
+                    <Grid  md={4}   item  >
                         
                               <Card className={classes.test}>
                                   <CardContent>
