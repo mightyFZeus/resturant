@@ -24,7 +24,7 @@ p{
         width:200px;
         height: 200px;
     }
-    button{
+    .header-btn{
         margin-top: 1em;
     }
   
@@ -43,7 +43,7 @@ input{
     font-family: 'Raleway', sans-serif;
 }
 
-button{
+.header-btn{
   
     background-color: #06B025;
     font-family: 'Raleway', sans-serif; 

@@ -9,8 +9,8 @@ const History = () => {
     return (
         <>
         <div className={classes.toolbar}/>
-             <Grid className={classes.main}  container  justify="center" md={12} spacing={2}>
-                    <Grid  item xs={12}  md={6} >
+             <Grid className={classes.main}  container   md={12} spacing={2}>
+                    <Grid  item xs={12} sm={6}  md={6} >
                         <p className='history-head'>History of Figo</p>
                       <p className='history-cook'>We cook Tradition & Family Recipes</p>
                       <p >
@@ -22,14 +22,10 @@ const History = () => {
                       <button className='explore-btn'>Explore Our Story</button>
 
                     </Grid>
-                    <Grid md={6}>
-                        <Grid container  justify="space-evenly" md={12} spacing={1}>
-                
-                            <Grid  item xs={12} lg={2}   md={12} >
-                                <img className='road-to' src={sandwich}  alt='Road to knowledge' />
-                            </Grid> 
-                        </Grid>
-                </Grid>
+                    
+                    <Grid item  sm={6}    md={6} >
+                        <img className='road-to' src={sandwich}  alt='Road to knowledge' /> 
+                    </Grid>
             </Grid>
         </>
     )

@@ -6,6 +6,10 @@ import Welcome from './components/Welcome/Welcome'
 import Reason from './components/Reason/Reason'
 import History from './components/History/History'
 import News from './components/News/News'
+import Rice from './components/Explore/Rice/Rice'
+
+
+
 
 function App() {
   return (
@@ -16,6 +20,8 @@ function App() {
       <Reason />
       <History />
       <News />
+      <Rice />
+      
     </div>
   );
 }

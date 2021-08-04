@@ -4,6 +4,7 @@ export default makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
   test:{
       marginBottom:'.9em',
+      
       "&:hover": {
         backgroundColor: '#F8FBF5',
         borderBottom:' 5px solid #06B025;'
@@ -17,6 +18,10 @@ export default makeStyles((theme) => ({
   card: {
     maxWidth: 345,
   },
+
+  root:{
+      flewGrow: 1
+  }
  
  
 }));

@@ -15,114 +15,80 @@ const News = () => {
 
         <h4 className='reason-head'>News</h4>
         <h5 className='why-head'>Lastest News</h5>
-             <Grid container  justify="center" md={12}  spacing={2}>
+             <div className={classes.root}>
+             <Grid container  spacing={3}>
+                   <Grid item xs={6} sm={3} md={3}  >
+                                <Card className={classes.test}>
+                                    <CardContent className={classes.card}>
+                                         <CardMedia
+                                           className={classes.media}
+                                           image={hot}
+                                           title="Contemplative Reptile"
+                                       />
+                                          
+                                       <p className='food-name'>Spain Appetizer</p>
+                                       <p className='food-text'>Etiam feugiat elefiend est, odio tempor vitaevivamus
+                                       maximus scelerisque ipsum nec commodo
+                                       </p>
+                                       <p className='read'>Read more</p> 
+                                    </CardContent>
+                                </Card>
+                   </Grid>   
+                   <Grid item xs={6} sm={3} md={3}  >
+                                <Card className={classes.test}>
+                                    <CardContent className={classes.card}>
+                                         <CardMedia
+                                           className={classes.media}
+                                           image={pomo}
+                                           title="Contemplative Reptile"
+                                       />
+                                          
+                                       <p className='food-name'>Spain Appetizer</p>
+                                       <p className='food-text'>Etiam feugiat elefiend est, odio tempor vitaevivamus
+                                       maximus scelerisque ipsum nec commodo
+                                       </p>
+                                       <p className='read'>Read more</p> 
+                                    </CardContent>
+                                </Card>
+                   </Grid> 
+                   <Grid item xs={6} sm={3} md={3}  >
+                                <Card className={classes.test}>
+                                    <CardContent className={classes.card}>
+                                         <CardMedia
+                                           className={classes.media}
+                                           image={pomo}
+                                           title="Contemplative Reptile"
+                                       />
+                                          
+                                       <p className='food-name'>Spain Appetizer</p>
+                                       <p className='food-text'>Etiam feugiat elefiend est, odio tempor vitaevivamus
+                                       maximus scelerisque ipsum nec commodo
+                                       </p>
+                                       <p className='read'>Read more</p> 
+                                    </CardContent>
+                                </Card>
+                   </Grid> 
+                   <Grid item xs={6} sm={3} md={3}  >
+                                <Card className={classes.test}>
+                                    <CardContent className={classes.card}>
+                                         <CardMedia
+                                           className={classes.media}
+                                           image={hot}
+                                           title="Contemplative Reptile"
+                                       />
+                                          
+                                       <p className='food-name'>Spain Appetizer</p>
+                                       <p className='food-text'>Etiam feugiat elefiend est, odio tempor vitaevivamus
+                                       maximus scelerisque ipsum nec commodo
+                                       </p>
+                                       <p className='read'>Read more</p> 
+                                    </CardContent>
+                                </Card>
+                   </Grid>  
                    
-                    <Grid  md={2}    >
-                        <Grid container  justify="space-evenly" md={12} spacing={2}>
-                
-                            <Grid  item xs={12}     md={12} >
-                              
-                                 <Card className={classes.test}>
-                                     <CardContent className={classes.card}>
-                                          <CardMedia
-                                            className={classes.media}
-                                            image={hot}
-                                            title="Contemplative Reptile"
-                                        />
-                                           
-                                        <p className='food-name'>Spain Appetizer</p>
-                                        <p className='food-text'>Etiam feugiat elefiend est, odio tempor vitaevivamus
-                                        maximus scelerisque ipsum nec commodo
-                                        </p>
-                                        <p className='read'>Read more</p> 
-                                     </CardContent>
-                                 </Card>
-                                  
-                            </Grid> 
-                        </Grid>
-                        
-                    </Grid>
-                    <Grid  md={2}    >
-                        <Grid container  justify="space-evenly" md={12} spacing={2}>
-                
-                            <Grid  item xs={12}     md={12} >
-                              
-                                 <Card className={classes.test}>
-                                     <CardContent className={classes.card}>
-                                          <CardMedia
-                                            className={classes.media}
-                                            image={pomo}
-                                            title="Contemplative Reptile"
-                                        />
-                                           
-                                        <p className='food-name'>Spain Appetizer</p>
-                                        <p className='food-text'>Etiam feugiat elefiend est, odio tempor vitaevivamus
-                                        maximus scelerisque ipsum nec commodo
-                                        </p>
-                                        <p className='read'>Read more</p> 
-                                     </CardContent>
-                                 </Card>
-                                  
-                            </Grid> 
-                        </Grid>
-                        
-                    </Grid>
-                    <Grid  md={2}    >
-                        <Grid container  justify="space-evenly" md={12} spacing={2}>
-                
-                            <Grid item xs={12}     md={12} >
-                              
-                                 <Card className={classes.test}>
-                                     <CardContent className={classes.card}>
-                                          <CardMedia
-                                            className={classes.media}
-                                            image={hot}
-                                            title="Contemplative Reptile"
-                                        />
-                                           
-                                        <p className='food-name'>Spain Appetizer</p>
-                                        <p className='food-text'>Etiam feugiat elefiend est, odio tempor vitaevivamus
-                                        maximus scelerisque ipsum nec commodo
-                                        </p>
-                                        <p className='read'>Read more</p> 
-                                     </CardContent>
-                                 </Card>
-                                  
-                            </Grid> 
-                        </Grid>
-                        
-                    </Grid>
-                    <Grid  md={2}    >
-                        <Grid container  justify="space-evenly" md={12} spacing={2}>
-                
-                            <Grid  item xs={12}     md={12} >
-                              
-                                 <Card className={classes.test}>
-                                     <CardContent className={classes.card}>
-                                          <CardMedia
-                                            className={classes.media}
-                                            image={hot}
-                                            title="Contemplative Reptile"
-                                        />
-                                           
-                                        <p className='food-name'>Spain Appetizer</p>
-                                        <p className='food-text'>Etiam feugiat elefiend est, odio tempor vitaevivamus
-                                        maximus scelerisque ipsum nec commodo
-                                        </p>
-                                        <p className='read'>Read more</p> 
-                                     </CardContent>
-                                 </Card>
-                                  
-                            </Grid> 
-                        </Grid>
-                        
-                    </Grid>
-                    
-                    
-                    
-                    
-                    
-            </Grid>
+                   
+           </Grid>
+             </div>
         </>
     )
 }
