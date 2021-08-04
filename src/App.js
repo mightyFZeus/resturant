@@ -7,6 +7,7 @@ import Reason from './components/Reason/Reason'
 import History from './components/History/History'
 import News from './components/News/News'
 import Explore from './components/Explore/Explore'
+import Book from './components/Book/Book'
 
 
 
@@ -21,6 +22,7 @@ function App() {
       <History />
       <News />
       <Explore />
+      <Book />
     
       
     </div>
