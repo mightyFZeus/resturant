@@ -24,7 +24,7 @@ const History = () => {
                     </Grid>
                     
                     <Grid item  sm={6}    md={6} >
-                        <img className='road-to' src={sandwich}  alt='Road to knowledge' /> 
+                        <img className='history-img' src={sandwich}  alt='Road to knowledge' /> 
                     </Grid>
             </Grid>
         </>

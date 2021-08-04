@@ -15,9 +15,11 @@ const Reason = () => {
 
         <h4 className='reason-head'>Reason</h4>
         <h3 className='why-head'>Why Choose Us</h3>
-             <Grid container   md={12}  spacing={2}>
-                    <Grid item  md={4}     >
-                        
+             <Grid container  justify="center" md={12}  spacing={2}>
+                    <Grid   md={4}    >
+                        <Grid container   justify="space-evenly" md={12} spacing={2}>
+                
+                            <Grid   item xs={12}     md={12} >
                               <Card className={classes.test}>
                                   <CardContent>
                                       <MenuBookIcon  style={{color:'#06B025', fontSize:'80px'}}/>
@@ -27,11 +29,14 @@ const Reason = () => {
                                 </p>
                                   </CardContent>
                               </Card>
-                           
+                            </Grid> 
+                        </Grid>
                         
                     </Grid>
-                    <Grid  item md={4}    >
-                        
+                    <Grid  md={4}    >
+                        <Grid container  justify="space-evenly" md={12} spacing={2}>
+                
+                            <Grid  item xs={12}     md={12} >
                               <Card className={classes.test}>
                                   <CardContent>
                                   <DirectionsBikeIcon  style={{color:'#06B025', fontSize:'80px'}}/>
@@ -41,13 +46,16 @@ const Reason = () => {
                                 </p>
                                   </CardContent>
                               </Card>
-                            
+                            </Grid> 
+                        </Grid>
                         
                     </Grid>
                     
                     
-                    <Grid  md={4}   item  >
-                        
+                    <Grid  md={4}    >
+                        <Grid container  justify="space-evenly" md={12} spacing={2}>
+                
+                            <Grid  item xs={12}     md={12} >
                               <Card className={classes.test}>
                                   <CardContent>
                                   <MonetizationOnOutlinedIcon  style={{color:'#06B025', fontSize:'80px', }}/>
@@ -57,7 +65,8 @@ const Reason = () => {
                                 </p>
                                   </CardContent>
                               </Card>
-                          
+                            </Grid> 
+                        </Grid>
                         
                     </Grid> 
             </Grid>

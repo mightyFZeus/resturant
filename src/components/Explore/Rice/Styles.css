@@ -1,8 +1,23 @@
-.test{
+
+
+.each-slide > div {
     display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100px;
-}
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+   
+  }
+  
+  .each-slide span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+  }
+
+  .img-test{
+      width:200px
+  }
+
+
+  
