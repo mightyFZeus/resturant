@@ -25,32 +25,32 @@ export default function Rice() {
        <Slide {...properties}>
           <div className="each-slide">
             <div >
-             <img   className='img-test' src={slideImages[0]} />
+             <img   className='img-test' alt='img-slides' src={slideImages[0]} />
             </div>
           </div>
           <div className="each-slide">
             <div >
-              <img  className='img-test' src={slideImages[1]} />
+              <img  className='img-test' alt='img-slides' src={slideImages[1]} />
             </div>
           </div>
           <div className="each-slide">
             <div>
-              <img className='img-test' src={slideImages[2]} />
+              <img className='img-test' alt='img-slides' src={slideImages[2]} />
             </div>
           </div>
           <div className="each-slide">
             <div >
-              <img  className='img-test' src={slideImages[1]} />
+              <img  className='img-test' alt='img-slides' src={slideImages[1]} />
             </div>
           </div>
           <div className="each-slide">
             <div>
-              <img className='img-test' src={slideImages[2]} />
+              <img className='img-test' alt='img-slides' src={slideImages[2]} />
             </div>
           </div>
           <div className="each-slide">
             <div >
-             <img   className='img-test' src={slideImages[0]} />
+             <img   className='img-test' alt='img-slides' src={slideImages[0]} />
             </div>
           </div>
         </Slide>
