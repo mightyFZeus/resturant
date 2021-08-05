@@ -9,6 +9,12 @@ export default makeStyles((theme) => ({
         width:'300px',
       },
   },
+
+  date:{
+    [theme.breakpoints.up('md')]: {
+        marginLeft:'20em'
+      },
+  }
   
  
 }));
