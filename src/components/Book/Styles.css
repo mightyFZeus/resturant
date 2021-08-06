@@ -1,5 +1,27 @@
 .container{
-    border: 1px solid #000;
-    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
     
 }
+
+/* .text{
+    width: 110px;
+} */
+
+
+
+@media only screen and (max-width: 700px){
+    
+.test{
+    height:110px;
+    width:110px;
+   
+}
+
+.text{
+    width:110px;  
+    margin-bottom: 0;
+}
+  
+  
+  }

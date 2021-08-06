@@ -14,6 +14,27 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.up('md')]: {
         marginLeft:'20em'
       },
+  },
+  
+  
+  root:{
+      flexGrow:1,
+      marginLeft:'1em',
+      [theme.breakpoints.up('md')]: {
+        marginLeft:'3em'
+      },
+      
+  },
+  test:{
+    [theme.breakpoints.up('md')]: {
+       height:'400px'
+      },
+     [theme.breakpoints.down('sm')]: {
+        marginRight:'1em',
+        marginBottom:'1em',
+      },
+      marginRight:'1em',
+      marginBottom:'1em'
   }
   
  
