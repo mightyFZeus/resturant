@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import {Grid, Card, } from '@material-ui/core'
+import {Grid, Card, CardContent, CardMedia } from '@material-ui/core'
 import axios from 'axios'
 import useStyles from './Styles'
 import './Styles.css'
@@ -94,17 +94,20 @@ export default function Book() {
                 <form onSubmit={submit}>
                     <input type='text' onChange={(e) =>setValue(e.target.value)} />
                     <button>submit</button>
-                    <Grid className={classes.root} container spacing={2}>
+                   <Grid container className={classes.container} spacing={2}>
                         {images !==[] && images.map((img)=>(
-                       
-                            <Grid className={classes.test} component={Card} md={2}  item >
-                                <img className='test' src={img.recipe.image} alt={img.recipe.label} />
-                                <p className='text'>{img.recipe.label}</p>
+                            <Grid className={classes.test} md={2} >
+                                <Card>
+                                    
+                                        <img className='test' src={img.recipe.image} />
+                                        <p>{img.recipe.label}</p>
+                                 
+                                </Card>
+                            {/* <img src={img.recipe.image} />
+                            <p>{img.recipe.label}</p> */}
                             </Grid>
-                            
-                           
                         ))}
-                         </Grid> 
+                   </Grid>
                        
                    
                 </form>

@@ -17,24 +17,25 @@ export default makeStyles((theme) => ({
   },
   
   
-  root:{
-      flexGrow:1,
-      marginLeft:'1em',
-      [theme.breakpoints.up('md')]: {
+//   root:{
+//       flexGrow:1,
+//       marginLeft:'1em',
+//       [theme.breakpoints.up('md')]: {
+//         marginLeft:'3em'
+//       },
+      
+//   },
+  test:{
+    
+      marginBottom:'1em',
+      marginRight:'1em',
+      
+   
+  },
+  container:{
+    [theme.breakpoints.up('md')]: {
         marginLeft:'3em'
       },
-      
-  },
-  test:{
-    [theme.breakpoints.up('md')]: {
-       height:'400px'
-      },
-     [theme.breakpoints.down('sm')]: {
-        marginRight:'1em',
-        marginBottom:'1em',
-      },
-      marginRight:'1em',
-      marginBottom:'1em'
   }
   
  

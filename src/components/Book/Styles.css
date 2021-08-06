@@ -4,24 +4,10 @@
     
 }
 
-/* .text{
-    width: 110px;
-} */
-
-
-
-@media only screen and (max-width: 600px){
-    
-.test{
-    height:110px;
-    width:110px;
-   
-}
-
-.text{
-    width:110px;  
-    margin-bottom: 0;
+   @media only screen and (min-width : 992px) {
+    .test{
+        width: 200px;
+        height: 200px;
+    }
 }
   
-  
-  }
