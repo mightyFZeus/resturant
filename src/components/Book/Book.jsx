@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import {Grid, Card, CardContent, CardMedia } from '@material-ui/core'
+import {Grid, Card,  } from '@material-ui/core'
 import axios from 'axios'
 import useStyles from './Styles'
 import './Styles.css'
@@ -99,7 +99,7 @@ export default function Book() {
                             <Grid className={classes.test} md={2} >
                                 <Card>
                                     
-                                        <img className='test' src={img.recipe.image} />
+                                        <img className='test' alt={img.recipe.label} src={img.recipe.image} />
                                         <p>{img.recipe.label}</p>
                                  
                                 </Card>
