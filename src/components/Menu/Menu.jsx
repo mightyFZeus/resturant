@@ -1,5 +1,5 @@
 import React from 'react'
-import {Grid, Card, CardContent, CardMedia} from '@material-ui/core'
+import {Grid, Card, CardContent, } from '@material-ui/core'
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import uuid from 'react-uuid'
 import sandwich from '../../assets/images/sandwich.jpg'
