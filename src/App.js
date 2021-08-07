@@ -7,25 +7,30 @@ import Reason from './components/Reason/Reason'
 import History from './components/History/History'
 import News from './components/News/News'
 import Explore from './components/Explore/Explore'
-import Book from './components/Book/Book'
+
+import {Context} from './Context'
+
 
 
 
 
 function App() {
+  
   return (
-    <div className="App">
-      <NavBar />
+    <Context>
+      <div className="App">
+      <NavBar  />
       <Header />
       <Welcome />
       <Reason />
       <History />
       <News />
       <Explore />
-      <Book />
+     
     
       
     </div>
+    </Context>
   );
 }
 

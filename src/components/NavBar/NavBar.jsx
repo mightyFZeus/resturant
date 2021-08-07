@@ -3,8 +3,10 @@ import {AppBar, Drawer, Toolbar, List, ListItem,IconButton} from '@material-ui/c
 import MenuIcon from "@material-ui/icons/Menu";
 import useStyles from './Styles'
 import './Styles.css'
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
 
-const NavBar = () => {
+
+const NavBar = ({amountOfAmounts}) => {
     const [isDesktop, setDesktop] = useState(window.innerWidth > 900);
   const [drawer, setDrawer] = useState(false);
   const toggleDrawer = (open) => (event) => setDrawer(open);
@@ -32,7 +34,8 @@ const NavBar = () => {
             <li>Home</li>
             <li>Menu</li>
             <li>Services</li>
-            <li>Sign In</li>
+            <li>Sign In</li> 
+            <li><ShoppingCartIcon /></li>
     
           </ul>
         </Toolbar>
@@ -65,6 +68,10 @@ const NavBar = () => {
                       </ListItem>
                       <ListItem>
                        Sign in 
+                      </ListItem>
+                      <ListItem>
+                       <ShoppingCartIcon />
+                      
                       </ListItem>
                     </List>
 
