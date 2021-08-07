@@ -7,6 +7,8 @@ import Reason from './components/Reason/Reason'
 import History from './components/History/History'
 import News from './components/News/News'
 import Explore from './components/Explore/Explore'
+import Menu from './components/Menu/Menu'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 import {Context} from './Context'
 
@@ -17,7 +19,9 @@ import {Context} from './Context'
 function App() {
   
   return (
-    <Context>
+    
+    
+        <Router>
       <div className="App">
       <NavBar  />
       <Header />
@@ -27,10 +31,11 @@ function App() {
       <News />
       <Explore />
      
-    
-      
+        
+         <Route path='/menu' exact  component={Menu} />    
     </div>
-    </Context>
+    </Router>
+    
   );
 }
 

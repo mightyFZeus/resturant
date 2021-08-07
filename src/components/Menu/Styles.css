@@ -1,0 +1,16 @@
+.menu-item-image{
+    width: 100px;
+    height:100px
+}
+
+.image-name{
+    font-size: 20px;
+    font-weight: bold;
+   
+    margin:0
+}
+
+.price-cart{
+    display: flex;
+    justify-content: space-between;
+}

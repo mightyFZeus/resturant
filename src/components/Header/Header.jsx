@@ -1,8 +1,10 @@
 import React from 'react'
-import {Grid} from '@material-ui/core'
+import {Grid, } from '@material-ui/core'
 import pizzza from '../../assets/images/pizzza.jpg'
 import './Styles.css'
 import useStyles from './Styles'
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import {Link} from 'react-router-dom'
 
 const Header = () => {
     const classes = useStyles()
@@ -18,7 +20,10 @@ const Header = () => {
 
                       <form>
                           <input type="email" placeholder='Enter Your Address' />
-                          <span><button className='header-btn'>Get Started</button></span>
+                          <Link to='/menu'>
+                          <span><button className='header-btn'>View Menu <ArrowForwardIcon /></button></span>
+                          </Link>
+                          
                       </form>
                     
                        

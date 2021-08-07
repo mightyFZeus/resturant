@@ -4,8 +4,9 @@ export default makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
   test:{
       marginBottom:'.9em',
+      backgroundColor: '#F8FBF5',
       "&:hover": {
-        backgroundColor: '#F8FBF5',
+        backgroundColor: '#ffffff',
         borderBottom:' 5px solid #06B025;'
       }
   }
