@@ -5,8 +5,9 @@ import './Styles.css'
 import cartContext from '../../Context/CartContext'
 import uuid from 'react-uuid'
 import useStyles from './Styles'
- import {  toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import toast, { Toaster } from 'react-hot-toast';
+
+
 
 
 const MenuItem = ({image, price, desc, name}) => {
@@ -19,19 +20,19 @@ const MenuItem = ({image, price, desc, name}) => {
         console.log('myContainer...', myContainer.current)
     })
 
+    const notify = () => toast('Item added to cart Sucessfully',{
+        duration: 2000,
+  position: 'top-center',
+  style: {
+   backgroundColor:'#06B025',
+    padding: '16px',
+    color: 'white',
+  },
+  
+  icon: '👏',
+    });
 
-
-    const notify = () => toast('🦄 Item Added successfully!', {
-        position: "bottom-center",
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        type:'success',
-        
-        });
+   
       
     const onClickHandler =() =>{
         const newItem={
@@ -43,6 +44,7 @@ const MenuItem = ({image, price, desc, name}) => {
         addToCart(newItem)
         console.log(newItem)
         notify()
+       
        
         
     }

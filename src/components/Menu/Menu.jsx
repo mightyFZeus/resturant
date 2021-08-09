@@ -6,6 +6,8 @@ import hot from '../../assets/images/hot.jpg'
 import pizzza from '../../assets/images/pizzza.jpg'
 import useStyles from './Styles'
 import './Styles.css'
+import Test from './Test'
+
 
 
 import MenuItem from './MenuItem'
@@ -87,8 +89,9 @@ const Menu = () => {
                              </Grid>
                              ))}
                    </Grid>
+                   <Test />
                 
-              
+          
         </>
     )
 }
