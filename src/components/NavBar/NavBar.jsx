@@ -33,7 +33,7 @@ const NavBar = ({amountOfAmounts}) => {
 
       >
         <Toolbar>
-            <p>Figo</p>
+            <p className='title'>Figo</p>
           <ul>
             <li>
               <Link className='link-color' to='/'>
@@ -62,7 +62,7 @@ const NavBar = ({amountOfAmounts}) => {
       <div>
         <AppBar position='fixed' className={classes.appbar} >
             <Toolbar>
-            <p>Figo</p>
+            <p className='title'>Figo</p>
                 <div className={classes.menu}>
                   <IconButton  onClick={toggleDrawer(true)}>
                     <MenuIcon />

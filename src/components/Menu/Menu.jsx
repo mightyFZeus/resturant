@@ -1,7 +1,5 @@
 import React  from 'react'
 import {Grid,  } from '@material-ui/core'
-
-import uuid from 'react-uuid'
 import sandwich from '../../assets/images/sandwich.jpg'
 import pomo from '../../assets/images/pomo.jpg'
 import hot from '../../assets/images/hot.jpg'

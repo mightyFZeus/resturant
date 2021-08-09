@@ -9,6 +9,12 @@ li{
   font-weight:700
 }
 
+.title{
+    font-weight: bolder;
+    font-size: 30px;
+    margin: 0;
+}
+
 ul{
     margin-left: auto;
 }

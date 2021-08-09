@@ -33,7 +33,7 @@ const Cart = () => {
                            
                    <div >
                      
-                      <img className='cart-image' src={item.content.children[0].currentSrc} />
+                      <img className='cart-image' alt='item-name' src={item.content.children[0].currentSrc} />
                       <div className='cart-name-price-div'>
                        <p>{item.content.childNodes[1].innerHTML}</p>
                        <p>{item.content.nextSibling.innerText}</p>
@@ -54,8 +54,8 @@ const Cart = () => {
             
                 :
                 <div>
-                    <p className='empty-cart-text'>Your cart is empty, start shopping now</p>
-                    <img src={face}/>
+                    <p className='empty-cart-text'>Your cart is empty</p>
+                    <img alt='dissapointed-face' src={face}/>
                 <Link className='cart-link' to='/menu'>
                 
                 <button className='empty-cart'>Go to shop Now<span><ArrowBackIcon /></span></button>

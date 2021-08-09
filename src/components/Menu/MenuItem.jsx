@@ -1,11 +1,13 @@
 import React, {useEffect, useContext, useRef} from 'react'
-import {Grid, Card, CardContent, } from '@material-ui/core'
+import { Card, CardContent, } from '@material-ui/core'
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import './Styles.css'
 import cartContext from '../../Context/CartContext'
 import uuid from 'react-uuid'
+import useStyles from './Styles'
 
 const MenuItem = ({image, price, desc, name}) => {
+    const classes = useStyles()
     const {addToCart} = useContext(cartContext)
 
     const myContainer = useRef([])
@@ -32,13 +34,13 @@ const MenuItem = ({image, price, desc, name}) => {
                         <Card >
                             <CardContent >
                                <div ref={myContainer}>
-                               <img  id='test' className='menu-item-image' src={image} />
+                               <img  id='test' alt={name} className='menu-item-image' src={image} />
                                 <p className='image-name' >{name}</p>
                                 <p className='item-desc'>{desc}</p>
                                </div>
                              <div  className='price-cart'>
                              <p>{price}</p>
-                                <AddShoppingCartIcon onClick={onClickHandler}  />
+                                <AddShoppingCartIcon className={classes.addIcon} onClick={onClickHandler}  />
                              </div>
 
                             </CardContent>

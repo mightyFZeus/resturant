@@ -13,6 +13,8 @@
 }
 .empty-cart-text{
     text-align: center;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .empty-cart{
