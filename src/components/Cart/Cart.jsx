@@ -8,10 +8,14 @@ import useStyles from './Styles'
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import face from '../../assets/images/face.png'
 
+
+
 const Cart = () => {
     const {cart, deleteFromCart, clearCart} = useContext(cartContext)
     const classes =  useStyles()
+
    
+    
 
     return (
         

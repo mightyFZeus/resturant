@@ -7,6 +7,7 @@ import pizzza from '../../assets/images/pizzza.jpg'
 import useStyles from './Styles'
 import './Styles.css'
 
+
 import MenuItem from './MenuItem'
 
 
@@ -86,6 +87,7 @@ const Menu = () => {
                              </Grid>
                              ))}
                    </Grid>
+                
               
         </>
     )
