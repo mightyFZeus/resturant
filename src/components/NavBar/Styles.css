@@ -16,3 +16,8 @@ ul{
 p{
     color:black
 }
+
+.link-color{
+    color:black;
+    text-decoration: none;
+}

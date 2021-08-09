@@ -1,67 +1,69 @@
-import React from 'react'
-import {Grid, Card, CardContent, } from '@material-ui/core'
-import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
+import React  from 'react'
+import {Grid,  } from '@material-ui/core'
+
 import uuid from 'react-uuid'
 import sandwich from '../../assets/images/sandwich.jpg'
+import pomo from '../../assets/images/pomo.jpg'
 import hot from '../../assets/images/hot.jpg'
+import pizzza from '../../assets/images/pizzza.jpg'
 import useStyles from './Styles'
 import './Styles.css'
 
+import MenuItem from './MenuItem'
+
+
 const menuItems = [
     {
-        id: uuid(),
+        id: 1,
+        name:'HotDog',
+        description:'This is the description of Sandwich',
+        price:'10$',
+        image: hot
+    },
+    {
+        id: 2,
+        name:'Pomo',
+        description:'This is the description of Sandwich',
+        price:'10$',
+        image: pomo
+    },
+    {
+        id: 3,
         name:'Sandwich',
         description:'This is the description of Sandwich',
         price:'10$',
         image: sandwich
     },
     {
-        id: uuid(),
-        name:'Sandwich',
+        id: 4,
+        name:'Pizza',
         description:'This is the description of Sandwich',
         price:'10$',
-        image: sandwich
+        image: pizzza
     },
     {
-        id: uuid(),
-        name:'Sandwich',
-        description:'This is the description of Sandwich',
-        price:'10$',
-        image: sandwich
-    },
-    {
-        id: uuid(),
-        name:'Sandwich',
-        description:'This is the description of Sandwich',
-        price:'10$',
-        image: sandwich
-    },
-]
-
-const menuItems2 = [
-    {
-        id:uuid(),
+        id:5,
         name:'Hotdog',
         description:'This is the description of Hotdog ',
         price:'15$',
         image:hot
     },
     {
-        id:uuid(),
+        id:6,
         name:'Hotdog',
         description:'This is the description of Hotdog ',
         price:'15$',
         image:hot
     },
     {
-        id:uuid(),
+        id:7,
         name:'Hotdog',
         description:'This is the description of Hotdog ',
         price:'15$',
         image:hot
     },
     {
-        id:uuid(),
+        id:8,
         name:'Hotdog',
         description:'This is the description of Hotdog ',
         price:'15$',
@@ -69,46 +71,24 @@ const menuItems2 = [
     }
 ]
 
+
+
 const Menu = () => {
-    const classes = useStyles()
+    const classes= useStyles()
+    
+    
+
     return (
-        <>
-           <Grid container  spacing={3}>
-                {menuItems.map((item)=>(
-                    <Grid item xs={6} sm={3} md={3} >
-                        <Card className={classes.card}>
-                            <CardContent>
-                               <img alt={item.name} className='menu-item-image' src={item.image} />
-                                <p className='image-name'>{item.name}</p>
-                                <p className='item-desc'>{item.description}</p>
-                             <div  className='price-cart'>
-                             <p>{item.price}</p>
-                                <AddShoppingCartIcon />
-                             </div>
-
-                            </CardContent>
-                        </Card>
-                    </Grid>
-                ))}   
-            </Grid> 
-            <Grid container  spacing={3}>
-                {menuItems2.map((item)=>(
-                    <Grid item xs={6} sm={3} md={3} >
-                        <Card className={classes.card}>
-                            <CardContent>
-                               <img alt={item.name} className='menu-item-image' src={item.image} />
-                                <p className='image-name'>{item.name}</p>
-                                <p className='item-desc'>{item.description}</p>
-                                <div className='price-cart'>
-                             <p>{item.price}</p>
-                                <AddShoppingCartIcon />
-                             </div>
-
-                            </CardContent>
-                        </Card>
-                    </Grid>
-                ))}   
-            </Grid>
+        <>  
+        <div className={classes.toolbar} />                 
+                   <Grid container spacing={3}>
+                   {menuItems.map((item)=>(
+                             <Grid key={item.id} item xs={6} sm={3} md={3}>
+                                 <MenuItem price={item.price} desc={item.description} name={item.name} image={item.image} />
+                             </Grid>
+                             ))}
+                   </Grid>
+              
         </>
     )
 }

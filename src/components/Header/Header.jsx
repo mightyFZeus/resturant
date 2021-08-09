@@ -5,6 +5,11 @@ import './Styles.css'
 import useStyles from './Styles'
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import {Link} from 'react-router-dom'
+import Welcome from '../Welcome/Welcome'
+import Reason from '../Reason/Reason'
+import History from '../History/History'
+import News from '../News/News'
+import Rice from '../Explore/Breastfast/Rice'
 
 const Header = () => {
     const classes = useStyles()
@@ -34,6 +39,11 @@ const Header = () => {
                         <img className='pizza' src={pizzza}  alt='Road to knowledge' />          
                     </Grid>
             </Grid>
+            <Welcome />
+            <Reason />
+            <History />
+            <News />
+            <Rice />
         </>
     )
 }

@@ -10,5 +10,9 @@ export default makeStyles((theme) => ({
     marginLeft: "auto",
     
   },
+  linkColor:{
+    color:'black',
+    textDecoration:"none"
+  }
   
 }));

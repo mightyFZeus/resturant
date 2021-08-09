@@ -1,12 +1,16 @@
-import React,{useState, useEffect} from 'react'
+import React,{useState, useEffect, useContext} from 'react'
 import {AppBar, Drawer, Toolbar, List, ListItem,IconButton} from '@material-ui/core'
 import MenuIcon from "@material-ui/icons/Menu";
 import useStyles from './Styles'
 import './Styles.css'
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
+import {Link} from 'react-router-dom'
+import Badge from '@material-ui/core/Badge';
+import cartContext from '../../Context/CartContext';
 
 
 const NavBar = ({amountOfAmounts}) => {
+  const {cart} = useContext(cartContext)
     const [isDesktop, setDesktop] = useState(window.innerWidth > 900);
   const [drawer, setDrawer] = useState(false);
   const toggleDrawer = (open) => (event) => setDrawer(open);
@@ -24,25 +28,39 @@ const NavBar = ({amountOfAmounts}) => {
         <div>
             {isDesktop?<div>
         <AppBar
-        position='relative'
+       position='fixed'
         className={classes.appbar}
 
       >
         <Toolbar>
             <p>Figo</p>
           <ul>
-            <li>Home</li>
-            <li>Menu</li>
+            <li>
+              <Link className='link-color' to='/'>
+                Home
+              </Link>
+            </li>
+           <li>
+           <Link className='link-color' to='/menu'>
+             Menu
+           </Link>
+           </li>
             <li>Services</li>
             <li>Sign In</li> 
-            <li><ShoppingCartIcon /></li>
+            <Link to='/cart'>
+            <li>
+            <Badge  badgeContent={cart.length} color="primary">
+                  <ShoppingCartIcon />
+            </Badge>
+            </li></Link>
+
     
           </ul>
         </Toolbar>
       </AppBar>
       </div>: 
       <div>
-        <AppBar className={classes.appbar} >
+        <AppBar position='fixed' className={classes.appbar} >
             <Toolbar>
             <p>Figo</p>
                 <div className={classes.menu}>
@@ -58,10 +76,14 @@ const NavBar = ({amountOfAmounts}) => {
                   > 
                     <List>
                       <ListItem>
+                      <Link className={classes.linkColor} to='/'>
                         Home
+                      </Link>
                       </ListItem>
                       <ListItem>
-                       Menu
+                      <Link className={classes.linkColor} to='/menu'>
+                        Menu
+                      </Link>
                       </ListItem>
                       <ListItem>
                        Services
@@ -69,10 +91,15 @@ const NavBar = ({amountOfAmounts}) => {
                       <ListItem>
                        Sign in 
                       </ListItem>
-                      <ListItem>
-                       <ShoppingCartIcon />
                       
+                      <Link to='/cart'>
+                      <ListItem>
+                      <Badge badgeContent={cart.length} color='primary'>
+                       <ShoppingCartIcon />
+                       </Badge>
                       </ListItem>
+                      </Link>
+                      
                     </List>
 
                   </Drawer>
