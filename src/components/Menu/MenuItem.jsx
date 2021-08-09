@@ -5,7 +5,7 @@ import './Styles.css'
 import cartContext from '../../Context/CartContext'
 import uuid from 'react-uuid'
 import useStyles from './Styles'
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 
 
 
