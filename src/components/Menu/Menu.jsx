@@ -18,56 +18,56 @@ const menuItems = [
         id: 1,
         name:'HotDog',
         description:'This is the description of Sandwich',
-        price:'10$',
+        price:'10',
         image: hot
     },
     {
         id: 2,
         name:'Pomo',
         description:'This is the description of Sandwich',
-        price:'10$',
+        price:'10',
         image: pomo
     },
     {
         id: 3,
         name:'Sandwich',
         description:'This is the description of Sandwich',
-        price:'10$',
+        price:'10',
         image: sandwich
     },
     {
         id: 4,
         name:'Pizza',
         description:'This is the description of Sandwich',
-        price:'10$',
+        price:'10',
         image: pizzza
     },
     {
         id:5,
         name:'Hotdog',
         description:'This is the description of Hotdog ',
-        price:'15$',
+        price:'15',
         image:hot
     },
     {
         id:6,
         name:'Hotdog',
         description:'This is the description of Hotdog ',
-        price:'15$',
+        price:'15',
         image:hot
     },
     {
         id:7,
         name:'Hotdog',
         description:'This is the description of Hotdog ',
-        price:'15$',
+        price:'15',
         image:hot
     },
     {
         id:8,
         name:'Hotdog',
         description:'This is the description of Hotdog ',
-        price:'15$',
+        price:'15',
         image:hot
     }
 ]

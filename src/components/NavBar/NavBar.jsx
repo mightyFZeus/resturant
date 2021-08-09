@@ -40,11 +40,12 @@ const NavBar = ({amountOfAmounts}) => {
                 Home
               </Link>
             </li>
+            <Link className='link-color' to='/menu'>
            <li>
-           <Link className='link-color' to='/menu'>
+           
              Menu
-           </Link>
            </li>
+           </Link>
             <li>Services</li>
             <li>Sign In</li> 
             <Link to='/cart'>
@@ -75,16 +76,16 @@ const NavBar = ({amountOfAmounts}) => {
                     onClose={toggleDrawer(false)}
                   > 
                     <List>
-                      <ListItem>
-                      <Link className={classes.linkColor} to='/'>
+                    <Link className={classes.linkColor} to='/'>
+                        <ListItem>
                         Home
-                      </Link>
                       </ListItem>
-                      <ListItem>
+                      </Link>
                       <Link className={classes.linkColor} to='/menu'>
+                        <ListItem>
                         Menu
-                      </Link>
                       </ListItem>
+                      </Link>
                       <ListItem>
                        Services
                       </ListItem>

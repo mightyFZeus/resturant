@@ -17,6 +17,17 @@
     font-weight: bold;
 }
 
+.total{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.name{
+    font-weight: bolder;
+}
+
 .empty-cart{
     background-color: #06B025;;
     font-family: 'Raleway', sans-serif; 

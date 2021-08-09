@@ -10,12 +10,39 @@ import face from '../../assets/images/face.png'
 
 
 
+
+
 const Cart = () => {
     const {cart, deleteFromCart, clearCart} = useContext(cartContext)
     const classes =  useStyles()
+    console.log(cart)
+
+   
+   
+    const sumOfPrice = cart.map((item)=>(
+      item.content.nextElementSibling.innerText
+
+    ))
+
+    const turnedToNmuber = sumOfPrice.map((item)=>(
+        item.slice(1,3)
+    ))
+
+    console.log(turnedToNmuber)
+
+    let sumOfPriceNumber = turnedToNmuber.map(i=>Number(i));
+    console.log(sumOfPriceNumber);
 
    
     
+        let sumTotal = 0;
+
+        for (let i = 0; i < sumOfPriceNumber.length; i++) {
+            sumTotal += sumOfPriceNumber[i]
+        }
+
+        console.log(sumTotal)
+       
 
     return (
         
@@ -39,11 +66,10 @@ const Cart = () => {
                      
                       <img className='cart-image' alt='item-name' src={item.content.children[0].currentSrc} />
                       <div className='cart-name-price-div'>
-                       <p>{item.content.childNodes[1].innerHTML}</p>
+                       <p className='name'>{item.content.childNodes[1].innerHTML}</p>
                        <p>{item.content.nextSibling.innerText}</p>
-                       <DeleteIcon onClick={()=> deleteFromCart(item.id)    } />
-   
                       </div>
+                      <DeleteIcon onClick={()=> deleteFromCart(item.id)    } />
                      
                    </div>
                
@@ -54,6 +80,7 @@ const Cart = () => {
                    ))}
                     
                </Grid>
+               <p className='total'>Total:${sumTotal}</p>
             </div>
             
                 :

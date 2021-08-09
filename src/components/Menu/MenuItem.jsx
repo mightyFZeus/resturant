@@ -59,7 +59,7 @@ const MenuItem = ({image, price, desc, name}) => {
                                 <p className='item-desc'>{desc}</p>
                                </div>
                              <div  className='price-cart'>
-                             <p>{price}</p>
+                             <p>${price}</p>
                                 <AddShoppingCartIcon className={classes.addIcon} onClick={onClickHandler}  />
                              </div>
 
