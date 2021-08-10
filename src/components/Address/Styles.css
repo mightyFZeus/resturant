@@ -1,0 +1,18 @@
+.paystack-button{
+    background-color: #06B025;
+    font-family: 'Raleway', sans-serif; 
+  text-transform: none;
+  color: white;
+  border: 1px solid #fff;
+
+  padding: 9px 9px;
+  float:left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 15px;
+  
+
+  margin-bottom: 3em;
+  cursor:pointer;
+}

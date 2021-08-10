@@ -1,100 +1,109 @@
-import React, {useState, useContext} from 'react'
-import useStyles from './Styles'
-import './Styles.css'
-import cartContext from '../../Context/CartContext';
-import {Grid, Button, TextField, Box} from '@material-ui/core'
 
-const initialValues = {
-    name: "",
-    address: "",
-    number: "",
-    email: ""
-  };
+import React, { useState, useContext } from "react"
+import { PaystackButton } from "react-paystack"
+import "./Styles.css"
+
+
+import cartContext from '../../Context/CartContext';
+import useStyles from './Styles'
 
 const Address = () => {
-    const classes =  useStyles()
-    const { sumTotal} = useContext(cartContext)
-    const [values, setValues] = useState(initialValues);
+  const publicKey = "pk_test_86f1ba3ff3fbb0cf5bfe7ae8b7a21ff7f4f877d4"
+  const { sumTotal} = useContext(cartContext)
+  const amount = sumTotal * 100
+  const [email, setEmail] = useState("")
+  const [name, setName] = useState("")
+  const [phone, setPhone] = useState("")
+  const [address, setAddress] = useState('')
+  const classes = useStyles()
 
-    const handleChange = (e) => {
-        //const name = e.target.name
-        //const value = e.target.value
-        const { name, value } = e.target;
+
+  const componentProps = {
+    email,
+    amount,
+    address,
+    metadata: {
+      name,
+      phone,
+    },
+    publicKey,
+    text: "Buy Now",
+    onSuccess: () => {
+    //   setEmail("")
+    //   setName("")
+    //   setPhone("")
+    //   setAddress('')
+    success()
     
-        setValues({
-          ...values,
-          [name]: value
-        });
-      };
+    },
+    onClose: () => alert("Wait! You need this chow, don't go!!!!"),
+  }
 
+  const success =() =>(
+      <p>this is a success</p>
+  )
 
-
-
-    return (
-        <>
-           <Grid container className={classes.about} justify="center" md={12} spacing={2}>
-                
-                   
-                <Grid md={6}>
-                    <Grid container  justify="space-evenly" md={12} spacing={1}>
-             
-                        <Grid   item xs={12} lg={2}   md={12} >
-                            <Box className={classes.box}>
-                                <div className={classes.toolbar} />
-
-                                <div className={classes.formDiv}>
-                                <form className="contact-form" >
-                                    <TextField
-                                    className={classes.fieldText}
-                                    label="Your Name"
-                                    variant="outlined"
-                                    name="name"
-                                    value={values.name}
-                                    onChange={handleChange}
-                                    />
-                                    <br />
-                                    <TextField
-                                    className={classes.fieldText}
-                                    label="Your Email"
-                                    type="email"
-                                    variant="outlined"
-                                    name="email"
-                                    value={values.email}
-                                    onChange={handleChange}
-                                    />
-                                    <br />
-                                    <TextField
-                                    className={classes.fieldText}
-                                    label="Your Address"
-                                    
-                                    variant="outlined"
-                                    name="address"
-                                    value={values.address}
-                                    onChange={handleChange}
-                                    />
-                                    <br />
-                                    <TextField
-                                    className={classes.fieldText}
-                                    label="Phone Numner"
-                                    variant="outlined"
-                                    
-                                    type='number'
-                                    name="number"
-                                    value={values.number}
-                                    onChange={handleChange}
-                                    />
-                                    <Button type="submit" className={classes.button}>
-                                    Send
-                                    </Button>
-                                </form>
-                                </div>
-                            </Box>
-                        </Grid> 
-                    </Grid>
-            </Grid>
-          </Grid>
-        </>
-    )
+  return (
+    <div className="App">
+        <div className={classes.toolbar} />
+       
+      <div className="container">
+        <div className="item">
+          <div className="overlay-effect"></div>
+          
+          <div className="item-details">
+            <p className="item-details__title">Coconut Oil</p>
+            <p className="item-details__amount">Total: {sumTotal } NGN</p>
+          </div>
+        </div>
+        <div className="checkout">
+          <div className="checkout-form">
+            <div className="checkout-field">
+              <label>Name</label>
+              <input
+                type="text"
+                id="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </div>
+            <div className="checkout-field">
+              <label>Email</label>
+              <input
+                type="text"
+                id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div className="checkout-field">
+              <label>Phone</label>
+              <input
+                type="text"
+                id="phone"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+              />
+              
+            </div>
+            <div className="checkout-field">
+              <label>Address</label>
+              <input
+                type="text"
+                id="phone"
+                value={address}
+                onChange={(e) => setAddress(e.target.value)}
+              />
+              
+            </div>
+            <PaystackButton className="paystack-button" {...componentProps} />
+            
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  )
 }
 
 export default Address
