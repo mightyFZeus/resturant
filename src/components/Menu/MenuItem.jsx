@@ -22,7 +22,7 @@ const MenuItem = ({image, price, desc, name}) => {
 
     const notify = () => toast('Item added to cart Sucessfully',{
         duration: 2000,
-  position: 'top-center',
+  position: 'bottom-center',
   style: {
    backgroundColor:'#06B025',
     padding: '16px',

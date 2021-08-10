@@ -2,6 +2,7 @@
 import React, { useState, useContext } from "react"
 import { PaystackButton } from "react-paystack"
 import "./Styles.css"
+import {Link} from 'react-router-dom'
 
 
 import cartContext from '../../Context/CartContext';
@@ -100,8 +101,10 @@ const Address = () => {
             
           </div>
         </div>
+        
       </div>
-     
+      <Link to='/cart'>
+      <button>Back To Cart</button></Link>
     </div>
   )
 }

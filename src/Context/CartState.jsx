@@ -9,7 +9,7 @@ const CartState = (props) => {
 
     const notify = () => toast('Item Deleted',{
         duration: 2000,
-  position: 'top-center',
+  position: 'bottom-center',
   style: {
    backgroundColor:'red',
     padding: '16px',
@@ -26,6 +26,9 @@ const CartState = (props) => {
         cart:[] // {id:123, price: 'price', image:'image'}
     }
     const [state, dispatch] = useReducer(Reducer, initialState)
+    
+
+    console.log(state.cart)
 
 
     const sumOfPrice = state.cart.map((item)=>(

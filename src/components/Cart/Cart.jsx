@@ -3,7 +3,7 @@ import cartContext from '../../Context/CartContext';
 import {Grid, Card, CardContent} from '@material-ui/core'
 import DeleteIcon from '@material-ui/icons/Delete';
 import './Styles.css'
-import {Link} from 'react-router-dom'
+import {Link } from 'react-router-dom'
 import useStyles from './Styles'
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import face from '../../assets/images/face.png'
@@ -16,6 +16,9 @@ import face from '../../assets/images/face.png'
 const Cart = () => {
     const {cart, deleteFromCart, sumTotal, clearCart} = useContext(cartContext)
     const classes =  useStyles()
+    
+    
+    
    
        
 
@@ -26,6 +29,7 @@ const Cart = () => {
         {cart.length !==0 ?
         
             <div>
+                
                 <h1>Your Orders</h1>
                 <hr />
                 {cart.length > 0? <p className='cart-length'>You have {cart.length} items left in your Cart</p>:'null'}
@@ -42,8 +46,10 @@ const Cart = () => {
                       <img className='cart-image' alt='item-name' src={item.content.children[0].currentSrc} />
                       <div className='cart-name-price-div'>
                        <p className='name'>{item.content.childNodes[1].innerHTML}</p>
-                       <p>{item.content.nextSibling.innerText}</p>
+                       <p>{item.content.nextSibling.innerText }</p>
                       </div>
+                      
+
                       <DeleteIcon onClick={()=> deleteFromCart(item.id)    } />
                      
                    </div>
