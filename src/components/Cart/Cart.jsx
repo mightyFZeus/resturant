@@ -12,36 +12,11 @@ import face from '../../assets/images/face.png'
 
 
 
+
 const Cart = () => {
-    const {cart, deleteFromCart, clearCart} = useContext(cartContext)
+    const {cart, deleteFromCart, sumTotal, clearCart} = useContext(cartContext)
     const classes =  useStyles()
-    console.log(cart)
-
    
-   
-    const sumOfPrice = cart.map((item)=>(
-      item.content.nextElementSibling.innerText
-
-    ))
-
-    const turnedToNmuber = sumOfPrice.map((item)=>(
-        item.slice(1,3)
-    ))
-
-    console.log(turnedToNmuber)
-
-    let sumOfPriceNumber = turnedToNmuber.map(i=>Number(i));
-    console.log(sumOfPriceNumber);
-
-   
-    
-        let sumTotal = 0;
-
-        for (let i = 0; i < sumOfPriceNumber.length; i++) {
-            sumTotal += sumOfPriceNumber[i]
-        }
-
-        console.log(sumTotal)
        
 
     return (
@@ -80,7 +55,8 @@ const Cart = () => {
                    ))}
                     
                </Grid>
-               <p className='total'>Total:${sumTotal}</p>
+               <p className='total'>Total:₦{sumTotal}</p>
+               
             </div>
             
                 :
@@ -94,8 +70,14 @@ const Cart = () => {
                 </div>
                 
                 }
+                <div className='checkout-div'>
                 {cart.length !== 0  && <button className='clear-cart-btn' onClick={() =>clearCart()}>Clear cart</button>  }
             
+              <Link to='/address'>
+              <button style={{display: cart.length ===0 ? 'none' : 'null'}} className='checkout-btn'>CheckOut</button>
+              </Link>
+              </div>
+                
             
            
         </>

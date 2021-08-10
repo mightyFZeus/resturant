@@ -18,10 +18,43 @@ const CartState = (props) => {
   
   icon: '👏',
     });
+
+ 
+
+
     const initialState = {
         cart:[] // {id:123, price: 'price', image:'image'}
     }
     const [state, dispatch] = useReducer(Reducer, initialState)
+
+
+    const sumOfPrice = state.cart.map((item)=>(
+        item.content.nextElementSibling.innerText
+  
+      ))
+  
+      const turnedToNmuber = sumOfPrice.map((item)=>(
+          item.slice(1,3)
+      ))
+  
+      console.log(turnedToNmuber)
+  
+      let sumOfPriceNumber = turnedToNmuber.map(i=>Number(i));
+      console.log(sumOfPriceNumber);
+  
+     
+      
+          let sumTotal = 0;
+  
+          for (let i = 0; i < sumOfPriceNumber.length; i++) {
+              sumTotal += sumOfPriceNumber[i]
+          }
+  
+          console.log(sumTotal)
+
+
+
+ 
    
     
 
@@ -51,7 +84,8 @@ const CartState = (props) => {
             cart: state.cart,
             addToCart,
             deleteFromCart,
-            clearCart
+            clearCart,
+            sumTotal
         }}>
             <Test style={{display:'none'}} />
             {props.children}

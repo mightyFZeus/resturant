@@ -7,6 +7,10 @@
     display: flex;
     justify-content: space-between;
 }
+/* .checkout-div{
+    display: flex;
+    
+} */
 
 .cart-link{
     text-decoration: none;
@@ -28,8 +32,8 @@
     font-weight: bolder;
 }
 
-.empty-cart{
-    background-color: #06B025;;
+.empty-cart, .checkout-btn{
+    background-color: #06B025;
     font-family: 'Raleway', sans-serif; 
   text-transform: none;
   color: white;
@@ -78,3 +82,6 @@
   cursor:pointer;
   margin-top: 2em;
 }
+
+
+   
