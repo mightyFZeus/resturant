@@ -25,7 +25,7 @@ const Checkout = () => {
             <hr />
             <div className='sub-container-2'>
                 <p className="bold-text">Total</p>
-                <p className="bold-text">{sumTotal}</p>
+                <p className="bold-text">₦{sumTotal}</p>
             </div>
         </div>
         </>
