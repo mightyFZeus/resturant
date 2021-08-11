@@ -33,7 +33,9 @@ const NavBar = ({amountOfAmounts}) => {
 
       >
         <Toolbar>
+            <Link className='cart-link' to='/'>
             <p className='title'>Figo</p>
+            </Link>
           <ul>
             <li>
               <Link className='link-color' to='/'>
@@ -63,8 +65,9 @@ const NavBar = ({amountOfAmounts}) => {
       <div>
         <AppBar position='fixed' className={classes.appbar} >
             <Toolbar>
-            <p className='title'>Figo</p>
-                <div className={classes.menu}>
+              <div className='container'>
+              
+                <div className='menu-icon' >
                   <IconButton  onClick={toggleDrawer(true)}>
                     <MenuIcon />
                   </IconButton>
@@ -92,20 +95,24 @@ const NavBar = ({amountOfAmounts}) => {
                       <ListItem>
                        Sign in 
                       </ListItem>
-                      
-                      <Link to='/cart'>
-                      <ListItem>
-                      <Badge badgeContent={cart.length} color='primary'>
-                       <ShoppingCartIcon />
-                       </Badge>
-                      </ListItem>
-                      </Link>
-                      
-                    </List>
-
+                      </List>
                   </Drawer>
-
-                </div>
+                  </div>
+                  <div>
+            <Link className='cart-link' to='/'>
+            <p className='title'>Figo</p>
+            </Link>
+            </div>
+                  <div className='cart'>
+                      <Link className='cart-link' to='/cart'>
+                      <Badge badgeContent={cart.length} color='primary'>
+                       <ShoppingCartIcon fontSize='large'/>
+                       </Badge>
+                      </Link>
+                  </div>
+                
+                
+              </div>
             </Toolbar>
           </AppBar>  
       </div>

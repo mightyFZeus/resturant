@@ -9,6 +9,7 @@ import {BrowserRouter as Router, Route, } from 'react-router-dom'
 import Cart from './components/Cart/Cart'
 
 import CartState from './Context/CartState';
+import Checkout from './components/Checkout/Checkout';
 
 
 
@@ -29,6 +30,7 @@ function App() {
               <Route path='/menu'  component={Menu} />  
               <Route path='/cart' component={Cart} />
               <Route path='/address' component={Address} />
+              <Route path='/checkout' component={Checkout} />
 
         </CartState>    
         </div>

@@ -3,14 +3,13 @@ import React, { useState, useContext } from "react"
 import { PaystackButton } from "react-paystack"
 import "./Styles.css"
 import {Link} from 'react-router-dom'
-
-
 import cartContext from '../../Context/CartContext';
 import useStyles from './Styles'
+import Checkout from "../Checkout/Checkout";
 
 const Address = () => {
   const publicKey = "pk_test_86f1ba3ff3fbb0cf5bfe7ae8b7a21ff7f4f877d4"
-  const { sumTotal} = useContext(cartContext)
+  const { sumTotal, clearCart} = useContext(cartContext)
   const amount = sumTotal * 100
   const [email, setEmail] = useState("")
   const [name, setName] = useState("")
@@ -30,81 +29,87 @@ const Address = () => {
     publicKey,
     text: "Buy Now",
     onSuccess: () => {
-    //   setEmail("")
-    //   setName("")
-    //   setPhone("")
-    //   setAddress('')
-    success()
+      setEmail("")
+      setName("")
+      setPhone("")
+      setAddress('')
+      
+    
     
     },
     onClose: () => alert("Wait! You need this chow, don't go!!!!"),
   }
 
-  const success =() =>(
-      <p>this is a success</p>
-  )
+  
 
   return (
-    <div className="App">
+    <div >
         <div className={classes.toolbar} />
-       
-      <div className="container">
-        <div className="item">
-          <div className="overlay-effect"></div>
-          
-          <div className="item-details">
-            <p className="item-details__title">Coconut Oil</p>
-            <p className="item-details__amount">Total: {sumTotal } NGN</p>
-          </div>
+        {sumTotal !== 0?
+            <div className="address-page">
+                
+                <h4>BILLING DETAILS</h4>
+                <div className="container">
+                
+                    <form className='address-form'>
+                    <label for='name'>Name:
+                        <input
+                        type="text"
+                        className='input'
+                        id="name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        />
+                        </label>
+                        
+                    
+                        <label>Email</label>
+                        <input
+                        type="text"
+                        className='input'
+                        id="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        />
+                    
+                        <label>Phone</label>
+                        <input
+                        type="text"
+                        className='input'
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
+                        />
+                        
+                    
+                        <label>Address</label>
+                        <input
+                        type="text"
+                        className='input'
+                        value={address}
+                        onChange={(e) => setAddress(e.target.value)}
+                        />
+                    </form>    
+                </div>
+                <Checkout />
+                <p className="amount">Total Amount To be Paid: <span className='amount-gangan'>{sumTotal }</span> NGN</p>
+                <div className='test'>
+                <div onClick={() => clearCart()} >
+                <PaystackButton className="paystack-button"   {...componentProps} />
+            </div>
+            <Link to='/cart'>
+            <button className='back-to-cart'>Back To Cart</button>
+            </Link>
         </div>
-        <div className="checkout">
-          <div className="checkout-form">
-            <div className="checkout-field">
-              <label>Name</label>
-              <input
-                type="text"
-                id="name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </div>
-            <div className="checkout-field">
-              <label>Email</label>
-              <input
-                type="text"
-                id="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-            <div className="checkout-field">
-              <label>Phone</label>
-              <input
-                type="text"
-                id="phone"
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-              />
-              
-            </div>
-            <div className="checkout-field">
-              <label>Address</label>
-              <input
-                type="text"
-                id="phone"
-                value={address}
-                onChange={(e) => setAddress(e.target.value)}
-              />
-              
-            </div>
-            <PaystackButton className="paystack-button" {...componentProps} />
-            
-          </div>
         </div>
-        
-      </div>
-      <Link to='/cart'>
-      <button>Back To Cart</button></Link>
+            : 
+         <div>
+             <div className={classes.toolbar} />
+             <p>You have No Bussiness here</p>
+        <Link to='/cart'>
+        <button className='back-to-cart'>Back To Cart</button>
+        </Link>
+         </div>
+        }
     </div>
   )
 }

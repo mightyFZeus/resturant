@@ -1,0 +1,19 @@
+.sub-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-container-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
