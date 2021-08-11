@@ -5,7 +5,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import './Styles.css'
 import {Link } from 'react-router-dom'
 import useStyles from './Styles'
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+
 import face from '../../assets/images/face.png'
 
 
@@ -71,7 +71,7 @@ const Cart = () => {
                     <img alt='dissapointed-face' src={face}/>
                 <Link className='cart-link' to='/menu'>
                 
-                <button className='empty-cart'>Go to shop Now<span><ArrowBackIcon /></span></button>
+                <button className='empty-cart'>Go to shop Now</button>
                 </Link>
                 </div>
                 

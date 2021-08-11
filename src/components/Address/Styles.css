@@ -10,7 +10,7 @@
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  margin-left: 15px;
+  margin-left: 5em;
   
 
   margin-bottom: 3em;
@@ -21,9 +21,11 @@
 .amount{
     margin-bottom: 2em;
     font-weight: bolder;
+    text-align: center;
 }
 .address-form {
     margin-bottom: 2em;
+    
 }
 
 
@@ -35,7 +37,7 @@
   border: 1px solid #fff;
 
   padding: 9px 9px;
-  float:left;
+  
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
@@ -55,6 +57,10 @@
     border: 1px solid black;
     padding: 10px;
 }
+
+
+
+
 
 .input{
     margin-bottom: 1em;

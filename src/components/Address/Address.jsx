@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom'
 import cartContext from '../../Context/CartContext';
 import useStyles from './Styles'
 import Checkout from "../Checkout/Checkout";
+import { Grid } from "@material-ui/core";
 
 const Address = () => {
   const publicKey = "pk_test_86f1ba3ff3fbb0cf5bfe7ae8b7a21ff7f4f877d4"
@@ -45,8 +46,10 @@ const Address = () => {
   return (
     <div >
         <div className={classes.toolbar} />
-        {sumTotal !== 0?
-            <div className="address-page">
+       
+            <Grid container justifyContent='center'>
+                <Grid item sm={12} md={8}>
+                <div className="address-page">
                 
                 <h4>BILLING DETAILS</h4>
                 <div className="container">
@@ -62,8 +65,7 @@ const Address = () => {
                         />
                         </label>
                         
-                    
-                        <label>Email</label>
+                        <label>Email:
                         <input
                         type="text"
                         className='input'
@@ -71,23 +73,26 @@ const Address = () => {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         />
-                    
-                        <label>Phone</label>
+                        </label>
+
+                        <label>Phone:
                         <input
                         type="text"
                         className='input'
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
                         />
+                        </label>
                         
                     
-                        <label>Address</label>
+                        <label>Address:
                         <input
                         type="text"
                         className='input'
                         value={address}
                         onChange={(e) => setAddress(e.target.value)}
                         />
+                        </label>
                     </form>    
                 </div>
                 <Checkout />
@@ -101,15 +106,9 @@ const Address = () => {
             </Link>
         </div>
         </div>
-            : 
-         <div>
-             <div className={classes.toolbar} />
-             <p>You have No Bussiness here</p>
-        <Link to='/cart'>
-        <button className='back-to-cart'>Back To Cart</button>
-        </Link>
-         </div>
-        }
+       
+                </Grid>
+            </Grid>
     </div>
   )
 }
