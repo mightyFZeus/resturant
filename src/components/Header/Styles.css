@@ -2,12 +2,13 @@
     width:300px
 }
 
-h1{
+.header{
     text-align: justify;
     padding-left:20px;
     font-size: 70px;
     margin-bottom: 0;
     font-weight: bolder;
+    
 }
 
 p{
@@ -17,7 +18,7 @@ p{
 }
 
 @media only screen and (max-width: 600px){
-    h1{
+    .header{
         font-size: 40px;
         word-spacing: 1px;
         

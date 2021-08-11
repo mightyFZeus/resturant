@@ -18,7 +18,7 @@ const Header = () => {
         <div className={classes.toolbar}/>
              <Grid className={classes.main}  container   spacing={2}>
                     <Grid  item xs={12} sm={6}  md={6} >
-                      <h1>All in Good Taste <br /> Food with Figo</h1>
+                      <p className='header'>All in Good Taste  Food with Figo</p >
                       <p >
                           Quickly predominate standard complaint architecture and may have prospective internal or organic resources
                       </p>
