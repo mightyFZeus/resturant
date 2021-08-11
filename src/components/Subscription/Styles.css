@@ -1,0 +1,21 @@
+.sub{
+    color:#FFB347;
+    font-family: 'Niconne', cursive;
+    margin-bottom: 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.update{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+@media only screen and   (max-width:600px){
+    .update{
+        font-size: 20px;
+        
+    }
+}

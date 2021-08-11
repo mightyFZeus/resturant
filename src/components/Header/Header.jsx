@@ -10,6 +10,8 @@ import Reason from '../Reason/Reason'
 import History from '../History/History'
 import News from '../News/News'
 import Rice from '../Explore/Breastfast/Rice'
+import Subscription from '../Subscription/Subscription'
+import Footer from '../Footer/Footer'
 
 const Header = () => {
     const classes = useStyles()
@@ -44,6 +46,8 @@ const Header = () => {
             <History />
             <News />
             <Rice />
+            <Subscription />
+            <Footer />
         </>
     )
 }

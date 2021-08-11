@@ -77,7 +77,7 @@ const Address = () => {
 
                         <label>Phone:
                         <input
-                        type="text"
+                        type="number"
                         className='input'
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
