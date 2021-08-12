@@ -12,7 +12,7 @@ import News from '../News/News'
 import Rice from '../Explore/Breastfast/Rice'
 import Subscription from '../Subscription/Subscription'
 import Footer from '../Footer/Footer'
-import {motion} from 'framer-motion'
+
 
 const Header = () => {
     const classes = useStyles()
