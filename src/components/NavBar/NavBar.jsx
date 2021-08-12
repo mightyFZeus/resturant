@@ -7,7 +7,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
 import {Link} from 'react-router-dom'
 import Badge from '@material-ui/core/Badge';
 import cartContext from '../../Context/CartContext';
-import {motion} from 'framer-motion'
+
 
 
 const NavBar = ({amountOfAmounts}) => {
