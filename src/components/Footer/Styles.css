@@ -1,0 +1,23 @@
+p{
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.header{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+li > p{
+    font-weight: 400;
+}
+
+.last{
+    margin-bottom: 5em;
+}
+
+.icon-div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}

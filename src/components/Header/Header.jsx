@@ -12,15 +12,19 @@ import News from '../News/News'
 import Rice from '../Explore/Breastfast/Rice'
 import Subscription from '../Subscription/Subscription'
 import Footer from '../Footer/Footer'
+import {motion} from 'framer-motion'
 
 const Header = () => {
     const classes = useStyles()
     return (
         <>
+        <div
+         
+        >
         <div className={classes.toolbar}/>
              <Grid className={classes.main}  container   spacing={2}>
                     <Grid  item xs={12} sm={6}  md={6} >
-                      <p className='header'>All in Good Taste,  Food with Figo</p >
+                      <p className='header'>Food With Figo, All in Good Tatse</p >
                       <p >
                           Quickly predominate standard complaint architecture and may have prospective internal or organic resources
                       </p>
@@ -48,6 +52,7 @@ const Header = () => {
             <Rice />
             <Subscription />
             <Footer />
+        </div>
         </>
     )
 }

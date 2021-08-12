@@ -5,12 +5,14 @@
     font-size: 30px;
     font-weight: bold;
     text-align: center;
+    
 }
 
 .update{
     font-size: 30px;
     text-align: center;
     font-weight: bolder;
+    margin-bottom: 1em
 }
 
 @media only screen and   (max-width:600px){

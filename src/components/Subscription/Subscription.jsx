@@ -19,11 +19,7 @@ const Subscription = () => {
                     <OutlinedInput
                     
                         id="email"
-                        endAdornment={<InputAdornment  ><ArrowForwardIcon style={{
-                            backgroundColor:'#06B025',
-                             padding:'10px',
-                            
-                             }} />
+                        endAdornment={<InputAdornment style={{ marginLeft:'3em'}}  ><ArrowForwardIcon fontSize='large' style={{color:'#06B025'}} />
                         </InputAdornment>}
                         labelWidth={60}
                     />
