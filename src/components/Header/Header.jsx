@@ -23,25 +23,17 @@ const Header = () => {
         >
         <div className={classes.toolbar}/>
              <Grid className={classes.main}  container   spacing={2}>
-                    <Grid  item xs={12} sm={6}  md={6} >
-                      <p className='header'>Food With Figo, All in Good Tatse</p >
+                    <Grid  item xs={12} sm={12}  md={6} >
+                      <p className='header-text'>Food With Figo, All in Good Tatse</p >
                       <p >
                           Quickly predominate standard complaint architecture and may have prospective internal or organic resources
-                      </p>
-
-                      <form>
-                          <input type="email" placeholder='Enter Your Address' />
+                      </p>    
                           <Link to='/menu'>
-                          <span><button className='header-btn'>View Menu </button></span>
-                          </Link>
+                          <button className='header-btn'>View Menu </button>
+                          </Link>  
                           
-                      </form>
-                    
-                       
-                    
-                        
                     </Grid>
-                    <Grid item xs={12} sm={6}  md={6} >    
+                    <Grid item xs={12} sm={12}  md={6} >    
                         <img className='pizza' src={pizzza}  alt='Road to knowledge' />          
                     </Grid>
             </Grid>
