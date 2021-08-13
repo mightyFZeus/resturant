@@ -33,7 +33,7 @@ const Cart = () => {
                 <h1>Your Orders</h1>
                 <hr />
                 {cart.length > 0? <p className='cart-length'>You have {cart.length} items left in your Cart</p>:'null'}
-                <Grid container spacing={3}>
+                <Grid justifyContent="center" container spacing={3}>
                
                {cart.map((item)=>(
                    

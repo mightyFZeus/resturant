@@ -1,6 +1,6 @@
 import React from 'react'
 import {Grid} from '@material-ui/core'
-import sandwich from '../../assets/images/sandwich.jpg'
+import image13 from '../../assets/new/image13.webp'
 import './Styles.css'
 import useStyles from './Styles'
 
@@ -24,7 +24,7 @@ const History = () => {
                     </Grid>
                     
                     <Grid item  sm={6}    md={6} >
-                        <img className='history-img' src={sandwich}  alt='Road to knowledge' /> 
+                        <img className='history-img' src={image13}  alt='Road to knowledge' /> 
                     </Grid>
             </Grid>
         </>

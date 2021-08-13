@@ -1,14 +1,14 @@
 import React  from 'react'
 import {Grid,  } from '@material-ui/core'
 
-import image1 from '../../assets/new/image1.jpg'
-import image2 from '../../assets/new/image2.jpg'
-import image3 from '../../assets/new/image3.jpg'
-import image4 from '../../assets/new/image4.jpg'
-import image5 from '../../assets/new/image5.jpg'
-import image6 from '../../assets/new/image6.jpg'
-import image7 from '../../assets/new/image7.jpg'
-import image8 from '../../assets/new/image8.jpg'
+import image1 from '../../assets/new/image1.webp'
+import image2 from '../../assets/new/image2.webp'
+import image3 from '../../assets/new/image3.webp'
+import image4 from '../../assets/new/image4.webp'
+import image5 from '../../assets/new/image5_50.webp'
+import image6 from '../../assets/new/image6.webp'
+import image7 from '../../assets/new/image7.webp'
+import image8 from '../../assets/new/image8.webp'
 import useStyles from './Styles'
 import './Styles.css'
 import Test from './Test'
@@ -21,29 +21,29 @@ import MenuItem from './MenuItem'
 const menuItems = [
     {
         id: 1,
-        name:'HotDog',
-        description:'This is the description of Sandwich',
+        name:'Oreo Smoothie',
+        description:'This is the description of Oreo smoothie',
         price:'3000',
         image: image1
     },
     {
         id: 2,
-        name:'Pomo',
-        description:'This is the description of Sandwich',
+        name:'Green Smoothie',
+        description:'This is the description of Green smoothie',
         price:'3500',
         image: image2
     },
     {
         id: 3,
-        name:'Sandwich',
-        description:'This is the description of Sandwich',
+        name:'Cheese Burger',
+        description:'This is the description of Cheese burger',
         price:'2000',
         image: image3
     },
     {
         id: 4,
-        name:'Pizza',
-        description:'This is the description of Sandwich',
+        name:'Beef Burger',
+        description:'This is the description of Beef burger',
         price:'1500',
         image: image4
     },
@@ -56,22 +56,22 @@ const menuItems = [
     },
     {
         id:6,
-        name:'Hotdog',
-        description:'This is the description of Hotdog ',
+        name:'Creamy Burger',
+        description:'This is the description of Creamy Burger ',
         price:'2500',
         image:image5
     },
     {
         id:7,
-        name:'Hotdog',
-        description:'This is the description of Hotdog ',
+        name:'Mango Smoothie',
+        description:'This is the description of Mango smoothie ',
         price:'1350',
         image:image7
     },
     {
         id:8,
-        name:'Hotdog',
-        description:'This is the description of Hotdog ',
+        name:'Beef with Rice',
+        description:'This is the description of Beef with rice ',
         price:'3200',
         image:image8
     }
