@@ -55,44 +55,45 @@ const Address = () => {
                 <div className="container">
                 
                     <form className='address-form'>
-                    <label for='name'>Name:
+                   
                         <input
                         type="text"
                         className='input'
                         id="name"
+                        placeholder='Enter Your Name'
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         />
-                        </label>
                         
-                        <label>Email:
+                        
+                        
                         <input
                         type="text"
                         className='input'
+                        placeholder='Enter Your email'
                         id="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         />
-                        </label>
+                        
 
-                        <label>Phone:
+                       
                         <input
                         type="number"
                         className='input'
+                        placeholder='Enter Your phone Number'
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
                         />
-                        </label>
                         
-                    
-                        <label>Address:
                         <input
                         type="text"
                         className='input'
                         value={address}
                         onChange={(e) => setAddress(e.target.value)}
+                        placeholder='Enter Your addres'
                         />
-                        </label>
+                        
                     </form>    
                 </div>
                 <Checkout />

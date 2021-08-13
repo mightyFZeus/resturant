@@ -37,7 +37,7 @@ const CartState = (props) => {
       ))
   
       const turnedToNmuber = sumOfPrice.map((item)=>(
-          item.slice(1,3)
+          item.slice(1,5)
       ))
   
       console.log(turnedToNmuber)

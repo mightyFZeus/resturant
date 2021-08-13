@@ -1,7 +1,9 @@
 import React from 'react'
 import {Grid, Card, CardContent, CardMedia} from '@material-ui/core';
-import hot from '../../assets/images/hot.jpg'
-import pomo from '../../assets/images/pomo.jpg'
+import image9 from '../../assets/new/image9.jpg'
+import image10 from '../../assets/new/image10.jpg'
+import image11 from '../../assets/new/image11.jpg'
+import image12 from '../../assets/new/image12.jpg'
 
 
 import './Styles.css'
@@ -22,7 +24,7 @@ const News = () => {
                                     <CardContent className={classes.card}>
                                          <CardMedia
                                            className={classes.media}
-                                           image={hot}
+                                           image={image9}
                                            title="Contemplative Reptile"
                                        />
                                           
@@ -39,7 +41,7 @@ const News = () => {
                                     <CardContent className={classes.card}>
                                          <CardMedia
                                            className={classes.media}
-                                           image={pomo}
+                                           image={image10}
                                            title="Contemplative Reptile"
                                        />
                                           
@@ -56,7 +58,7 @@ const News = () => {
                                     <CardContent className={classes.card}>
                                          <CardMedia
                                            className={classes.media}
-                                           image={pomo}
+                                           image={image11}
                                            title="Contemplative Reptile"
                                        />
                                           
@@ -73,7 +75,7 @@ const News = () => {
                                     <CardContent className={classes.card}>
                                          <CardMedia
                                            className={classes.media}
-                                           image={hot}
+                                           image={image12}
                                            title="Contemplative Reptile"
                                        />
                                           

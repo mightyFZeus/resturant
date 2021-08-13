@@ -1,9 +1,14 @@
 import React  from 'react'
 import {Grid,  } from '@material-ui/core'
-import sandwich from '../../assets/images/sandwich.jpg'
-import pomo from '../../assets/images/pomo.jpg'
-import hot from '../../assets/images/hot.jpg'
-import pizzza from '../../assets/images/pizzza.jpg'
+
+import image1 from '../../assets/new/image1.jpg'
+import image2 from '../../assets/new/image2.jpg'
+import image3 from '../../assets/new/image3.jpg'
+import image4 from '../../assets/new/image4.jpg'
+import image5 from '../../assets/new/image5.jpg'
+import image6 from '../../assets/new/image6.jpg'
+import image7 from '../../assets/new/image7.jpg'
+import image8 from '../../assets/new/image8.jpg'
 import useStyles from './Styles'
 import './Styles.css'
 import Test from './Test'
@@ -18,57 +23,57 @@ const menuItems = [
         id: 1,
         name:'HotDog',
         description:'This is the description of Sandwich',
-        price:'10',
-        image: hot
+        price:'3000',
+        image: image1
     },
     {
         id: 2,
         name:'Pomo',
         description:'This is the description of Sandwich',
-        price:'10',
-        image: pomo
+        price:'3500',
+        image: image2
     },
     {
         id: 3,
         name:'Sandwich',
         description:'This is the description of Sandwich',
-        price:'10',
-        image: sandwich
+        price:'2000',
+        image: image3
     },
     {
         id: 4,
         name:'Pizza',
         description:'This is the description of Sandwich',
-        price:'10',
-        image: pizzza
+        price:'1500',
+        image: image4
     },
     {
         id:5,
         name:'Hotdog',
         description:'This is the description of Hotdog ',
-        price:'15',
-        image:hot
+        price:'2500',
+        image:image6
     },
     {
         id:6,
         name:'Hotdog',
         description:'This is the description of Hotdog ',
-        price:'15',
-        image:hot
+        price:'2500',
+        image:image5
     },
     {
         id:7,
         name:'Hotdog',
         description:'This is the description of Hotdog ',
-        price:'15',
-        image:hot
+        price:'1350',
+        image:image7
     },
     {
         id:8,
         name:'Hotdog',
         description:'This is the description of Hotdog ',
-        price:'15',
-        image:hot
+        price:'3200',
+        image:image8
     }
 ]
 
