@@ -14,7 +14,7 @@ import face from '../../assets/images/face.png'
 
 
 const Cart = () => {
-    const {cart, deleteFromCart, sumTotal, clearCart} = useContext(cartContext)
+    const {cart, deleteFromCart, sumTotal, clearCart, } = useContext(cartContext)
     const classes =  useStyles()
     
     
@@ -51,6 +51,7 @@ const Cart = () => {
                       
 
                       <DeleteIcon onClick={()=> deleteFromCart(item.id)    } />
+                      {/* <DeleteIcon onClick={  handleToggleModal  } /> */}
                      
                    </div>
                
@@ -83,6 +84,8 @@ const Cart = () => {
               <button style={{display: cart.length ===0 ? 'none' : 'null'}} className='checkout-btn'>CheckOut</button>
               </Link>
               </div>
+
+         
                 
             
            

@@ -1,4 +1,4 @@
-import React, {useReducer} from 'react'
+import React, {useReducer, useState} from 'react'
 import cartContext from './CartContext'
 import Reducer from './Reducer'
 import {ADD_TO_CART, DELETE_FROM_CART, CLEAR} from './CartTypes'
@@ -6,6 +6,8 @@ import toast from 'react-hot-toast';
 import Test from './Test2'
 
 const CartState = (props) => {
+
+   
 
     const notify = () => toast('Item Deleted',{
         duration: 2000,
@@ -26,7 +28,9 @@ const CartState = (props) => {
         cart:[] // {id:123, price: 'price', image:'image'}
     }
     const [state, dispatch] = useReducer(Reducer, initialState)
-    
+  
+
+       
 
     console.log(state.cart)
 
@@ -69,12 +73,17 @@ const CartState = (props) => {
             })
         }
     // delete from cart
+    
         const deleteFromCart =(itemID) =>{
-            notify();
+            const confirmBox =  window.confirm('Do are you sure you want to delete this product')
+           if(confirmBox === true){
+            notify()
             dispatch({
                 type:DELETE_FROM_CART,
                 payload:itemID
             })
+           }
+            
         }
     //clear cart
     const clearCart = () =>{
@@ -88,7 +97,9 @@ const CartState = (props) => {
             addToCart,
             deleteFromCart,
             clearCart,
-            sumTotal
+            sumTotal,
+           
+            
         }}>
             <Test style={{display:'none'}} />
             {props.children}
