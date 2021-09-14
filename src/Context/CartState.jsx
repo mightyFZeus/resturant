@@ -1,4 +1,4 @@
-import React, {useReducer, useState} from 'react'
+import React, {useReducer} from 'react'
 import cartContext from './CartContext'
 import Reducer from './Reducer'
 import {ADD_TO_CART, DELETE_FROM_CART, CLEAR} from './CartTypes'
